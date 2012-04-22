@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SharpShuttle version="1.0">
+	<!--Hierin staan de settings van het toernooi-->
+	<Settings fields="10" sets="3" />
+	
+	<!--Hierin staan alle interne counters opgeslagen-->
+	<Counters>
+		<UserID value="0" />
+		<PlayerID value="102" />
+		<TeamID value="-1" />
+		<MatchID value="-1" />
+		<PouleID value="-1" />
+	</Counters>
+	
+	<!--Hierin staan alle gebruikers van het systeem gedefinieerd-->
+	<Users>
+		<User id="0">
+			<Name>Dit is de gebruikersnaam</Name>
+			<Role>123</Role>
+			<Info><![CDATA[Hier komt de info]]></Info>
+		</User>
+	</Users>
+
+	<!--Hierin staan alle spelers die in dit toernooi spelen-->
+	<Players>
+		<Player id="101" gender="M">
+			<Name>Dit is naam1</Name>
+			<Club></Club>
+			<Preferences></Preferences>
+			<Comment><![CDATA[]]></Comment>
+		</Player>
+		<Player id="102" gender="M">
+			<Name>Dit is naam2</Name>
+			<Club></Club>
+			<Preferences></Preferences>
+			<Comment><![CDATA[]]></Comment>
+		</Player>
+		<Player id="99" gender="M">
+			<Name>Kevin van Blokland</Name>
+			<Club></Club>
+			<Preferences></Preferences>
+			<Comment><![CDATA[]]></Comment>
+		</Player>
+	</Players>
+
+	<!--Hierin staan alle poules uit dit toernooi, inclusief de teams, wedstrijden en de scores-->
+	<Poules>
+		
+	</Poules>
+
+</SharpShuttle>

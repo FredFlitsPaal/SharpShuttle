@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7CDE1B55-44AF-49DA-A814-3B0127A8FA12}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shared</RootNamespace>
+    <AssemblyName>Shared</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Shared.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Algorithms\Algorithms.cs" />
+    <Compile Include="Algorithms\ByeTeam.cs" />
+    <Compile Include="Algorithms\Ladder.cs" />
+    <Compile Include="Algorithms\Matcher.cs" />
+    <Compile Include="Algorithms\MixedMatcher.cs" />
+    <Compile Include="Algorithms\RoundRobin.cs" />
+    <Compile Include="Communication\Communication.cs" />
+    <Compile Include="Communication\Exceptions\CommunicationExceptions.cs" />
+    <Compile Include="Communication\Message.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestPouleRemoveRound.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestGetAllHistoryMatches.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestGetAllMatches.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestGetAllPlayers.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestGetAllPoules.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestGetAllUsers.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestGetMatch.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestGetPoule.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestGetPouleHistoryMatches.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestGetPouleLadder.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestGetPouleMatches.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestGetPoulePlanning.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestGetPouleTeams.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestGetSettings.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestPouleFinishRound.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestSetAllPlayers.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestSetAllPoules.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestSetMatch.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestSetPoule.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestSetPouleNextRound.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestSetPoulePlanning.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestSetPouleTeams.cs" />
+    <Compile Include="Communication\Messages\Requests\RequestSetSettings.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseGetPouleMatches.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseGetAllPlayers.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseGetAllPoules.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseGetAllHistoryMatches.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseGetAllMatches.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseGetMatch.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseGetPoule.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseGetPouleHistoryMatches.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseGetPouleLadder.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseGetPoulePlanning.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseGetPouleTeams.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseGetSettings.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponsePouleFinishRound.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponsePouleRemoveRound.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseSetAllPlayers.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseSetMatch.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseSetPoule.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseSetPouleNextRound.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseSetPoulePlanning.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseSetPouleTeams.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseGetAllUsers.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseSetAllPoules.cs" />
+    <Compile Include="Communication\Messages\Responses\ResponseSetSettings.cs" />
+    <Compile Include="Communication\Messages\SerialUpdateMessage.cs" />
+    <Compile Include="Communication\RequestContainer.cs" />
+    <Compile Include="Communication\RequestMessage.cs" />
+    <Compile Include="Communication\RequestPool.cs" />
+    <Compile Include="Communication\RequestTypes.cs" />
+    <Compile Include="Communication\ResponseCaster.cs" />
+    <Compile Include="Communication\ResponseMessage.cs" />
+    <Compile Include="Communication\Serials\ISerialFilter.cs" />
+    <Compile Include="Communication\Serials\Serial.cs" />
+    <Compile Include="Communication\Serials\SerialCache.cs" />
+    <Compile Include="Communication\Serials\SerialTracker.cs" />
+    <Compile Include="Datastructures\AtomicCounter.cs" />
+    <Compile Include="Datastructures\AtomicCounter32.cs" />
+    <Compile Include="Datastructures\BinaryLogarithm.cs" />
+    <Compile Include="Datastructures\CastList.cs" />
+    <Compile Include="Datastructures\Graph.cs" />
+    <Compile Include="Datastructures\Graph128.cs" />
+    <Compile Include="Datastructures\Graph16.cs" />
+    <Compile Include="Datastructures\Graph32.cs" />
+    <Compile Include="Datastructures\Graph64.cs" />
+    <Compile Include="Datastructures\Heap.cs" />
+    <Compile Include="Datastructures\TypeFunctions.cs" />
+    <Compile Include="Data\DataCache.cs" />
+    <Compile Include="Data\IDataCache.cs" />
+    <Compile Include="Delegates\Delegates.cs" />
+    <Compile Include="Domain\Abstract.cs" />
+    <Compile Include="Domain\AbstractT.cs" />
+    <Compile Include="Domain\ChangeTrackingList.cs" />
+    <Compile Include="Domain\LadderTeam.cs" />
+    <Compile Include="Domain\Match.cs" />
+    <Compile Include="Domain\Player.cs" />
+    <Compile Include="Domain\PlayerPreference.cs" />
+    <Compile Include="Domain\Poule.cs" />
+    <Compile Include="Domain\Server.cs" />
+    <Compile Include="Domain\Team.cs" />
+    <Compile Include="Domain\Tournament.cs" />
+    <Compile Include="Domain\TournamentSettings.cs" />
+    <Compile Include="Domain\User.cs" />
+    <Compile Include="Extensions\ExtensionMethods.cs" />
+    <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Parsers\XMLParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sorters\AbstractItemSorter.cs" />
+    <Compile Include="Sorters\AllColumnSorter.cs" />
+    <Compile Include="Sorters\LadderTeamSorter.cs" />
+    <Compile Include="Sorters\TeamListViewSorter.cs" />
+    <Compile Include="TitledUserControl.cs">
+    </Compile>
+    <Compile Include="TitledUserControl.Designer.cs">
+      <DependentUpon>TitledUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AbstractView.cs" />
+    <Compile Include="Views\AbstractViews.cs" />
+    <Compile Include="Views\LadderTeamView.cs" />
+    <Compile Include="Views\LadderTeamViews.cs" />
+    <Compile Include="Views\TeamViews.cs" />
+    <Compile Include="Views\TeamView.cs" />
+    <Compile Include="Views\MatchView.cs" />
+    <Compile Include="Views\MatchViews.cs" />
+    <Compile Include="Views\PlayerPoulesView.cs" />
+    <Compile Include="Views\PlayerPoulesViews.cs" />
+    <Compile Include="Views\PlayerView.cs" />
+    <Compile Include="Views\PlayerViews.cs" />
+    <Compile Include="Views\PouleView.cs" />
+    <Compile Include="Views\PouleViews.cs" />
+    <Compile Include="Views\ServerView.cs" />
+    <Compile Include="Views\ServerViews.cs" />
+    <Compile Include="Views\TournamentView.cs" />
+    <Compile Include="Views\TournamentViews.cs" />
+    <Compile Include="Views\UserView.cs" />
+    <Compile Include="Views\UserViews.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>CD "$(SolutionDir)..\Signing"
+"sign.cmd" $(ConfigurationName) "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

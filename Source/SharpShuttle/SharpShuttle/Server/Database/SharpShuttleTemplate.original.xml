@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SharpShuttle version="1.0">
+	<!--Hierin staan alle interne counters opgeslagen-->
+	<Counters>
+		<UserID value="1" />
+		<PlayerID value="102" />
+		<TeamID value="-1" />
+		<MatchID value="-1" />
+		<PouleID value="-1" />
+	</Counters>
+	
+	<!--Hierin staan alle gebruikers van het systeem gedefinieerd-->
+	<Users>
+		<User id="0">
+			<Name>Dit is de gebruikersnaam</Name>
+			<Role>123</Role>
+			<Info><![CDATA[Hier komt de info]]></Info>
+		</User>
+	</Users>
+
+	<!--Hierin staan alle spelers die in dit toernooi spelen-->
+	<Players>
+		<Player id="101" gender="M">
+			<Name>Dit is naam1</Name>
+			<Club></Club>
+			<Preferences></Preferences>
+			<Comment><![CDATA[]]></Comment>
+		</Player>
+		<Player id="102" gender="M">
+			<Name>Dit is naam2</Name>
+			<Club></Club>
+			<Preferences></Preferences>
+			<Comment><![CDATA[]]></Comment>
+		</Player>
+		<Player id="99" gender="M">
+			<Name>Kevin van Blokland</Name>
+			<Club></Club>
+			<Preferences></Preferences>
+			<Comment><![CDATA[]]></Comment>
+		</Player>
+	</Players>
+
+	<!--Hierin staan alle poules uit dit toernooi, inclusief de teams, wedstrijden en de scores-->
+	<Poules>
+		<!--<Poule id="1010">
+			<Name>PouleName</Name>
+			<Discipline>100</Discipline>
+			<Level>Hoog niveau</Level>
+			<Round>10</Round>
+			<IsPlanned></IsPlanned>
+			<IsRunning></IsRunning>
+			<Comment></Comment>
+
+			--><!--Hierin staan alle spelers die men hier wilt indelen--><!--
+			<Planning>
+				<Player id="101" />
+				<Player id="102" />
+			</Planning>
+
+			--><!--Hierin komen alle teams die in deze poule spelen en de score die daarbij hoort--><!--
+			<Teams>
+				<Team id="0" inoperative="" rank="" matches="" setswon="" setslost=""
+							pointswon="" pointslost="" matcheswon="" matcheslost="">
+					<Name></Name>
+					<Player1 id="101" />
+					<Player2 id="102" />
+				</Team>
+				<Team id="1" inoperative="" rank="" matches="" setswon="" setslost=""
+			pointswon="" pointslost="" matcheswon="" matcheslost="">
+					<Name></Name>
+					<Player1 id="102" />
+					<Player2 id="" />
+				</Team>
+			</Teams>
+
+			--><!--Hierin komen alle wedstrijden die in deze poule zijn gespeeld-->
+						<!--
+			<Matches>
+				<Match id="0" round="0" matchnumber="0" played="" cached="">
+					<TeamA id="0" sets="" score=""></TeamA>
+					<TeamB id="1" sets="" score=""></TeamB>
+					<SetData></SetData>
+					<Field>100v</Field>
+					<StartTime>00:00:00</StartTime>
+					<EndTime>24:59:59</EndTime>
+					<Comment><![CDATA[Dit is de testcomment]]></Comment>
+				</Match>
+				<Match id="1" round="0" matchnumber="1" played="t" cached="t">
+					<TeamA id="0" sets="" score=""></TeamA>
+					<TeamB id="1" sets="" score=""></TeamB>
+					<SetData></SetData>
+					<Field>100v</Field>
+					<StartTime>00:00:00</StartTime>
+					<EndTime>24:59:59</EndTime>
+					<Comment><![CDATA[Dit is de testcomment]]></Comment>
+				</Match>
+			</Matches>
+
+		</Poule>
+
+		<Poule id="10">
+			<Name>PouleName</Name>
+			<Discipline>100</Discipline>
+			<Level>Laag niveau</Level>
+			<Round>-100</Round>
+			<IsPlanned></IsPlanned>
+			<IsRunning></IsRunning>
+			<Comment></Comment>
+
+			-->
+						<!--Hierin staan alle spelers die men hier wilt indelen--><!--
+			<Planning>
+				<Player id="101" />
+			</Planning>
+
+			--><!--Hierin komen alle teams die in deze poule spelen en de score die daarbij hoort--><!--
+			<Teams>
+				<Team id="3" inoperative="" rank="" matches="" setswon="" setslost=""
+							pointswon="" pointslost="" matcheswon="" matcheslost="">
+					<Name></Name>
+					<Player1 id="101" />
+					<Player2 id="101" />
+				</Team>
+				<Team id="4" inoperative="" rank="" matches="" setswon="" setslost=""
+			pointswon="" pointslost="" matcheswon="" matcheslost="">
+					<Name></Name>
+					<Player1 id="101" />
+					<Player2 id="101" />
+				</Team>
+			</Teams>
+
+			--><!--Hierin komen alle wedstrijden die in deze poule zijn gespeeld-->
+						<!--
+			<Matches>
+				<Match id="2" round="10" matchnumber="10" played="" cached="">
+					<TeamA id="3" sets="-100" score=""></TeamA>
+					<TeamB id="4" sets="-1000" score=""></TeamB>
+					<SetData></SetData>
+					<Field>100v</Field>
+					<StartTime>00:00:00</StartTime>
+					<EndTime>24:59:59</EndTime>
+					<Comment><![CDATA[Dit is de testcomment]]></Comment>
+				</Match>
+				<Match id="3" round="10" matchnumber="1" played="t" cached="t">
+					<TeamA id="3" sets="-100" score=""></TeamA>
+					<TeamB id="4" sets="-1000" score=""></TeamB>
+					<SetData></SetData>
+					<Field>100v</Field>
+					<StartTime>00:00:00</StartTime>
+					<EndTime>24:59:59</EndTime>
+					<Comment><![CDATA[Dit is de testcomment]]></Comment>
+				</Match>
+			</Matches>
+
+		</Poule>-->
+	</Poules>
+
+</SharpShuttle>
